@@ -2,6 +2,7 @@ import React from 'react';
 import './KnobGrid.css';
 import Gain from '../Knobs/Gain';
 import Frequency from '../Knobs/Frequency';
+import Shape from '../Knobs/Shape';
 import UndertideAudioContext from '../Shell/UndertideAudioContext';
 import OscillatorContext from './OscillatorContext';
 
@@ -20,6 +21,7 @@ const KnobGrid = () => {
             <OscillatorContext.Provider value={osc}>
                 <Gain />
                 <Frequency />
+                <Shape />
             </OscillatorContext.Provider>
         </div>
     );

@@ -4,7 +4,7 @@ const isDev = require("electron-is-dev");
 
 const createWindow = () => {
   // Create the browser window.
-  const win = new BrowserWindow({
+  let win = new BrowserWindow({
     width: 800,
     height: 600,
     webPreferences: {
